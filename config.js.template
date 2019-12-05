@@ -8,5 +8,17 @@ module.exports = {
     pelion_api_host: 'https://api.us-east-1.mbedcloud.com',
     pelion_filter: {
         state: 'registered'
+
+/// Example Filter keys for Pelion device attributes:
+//     custom_attributes: {},
+//     deployed_state: 'development',
+//     device_class: 'b212efa1f1a0587e9f34dc265a1c58d5',
+//     endpoint_name: '016e6a5c91db0000000000010016c288',
+//     id: '016e6a5c91db0000000000010016c288',
+//     lifecycle_status: 'enabled',
+//     serial_number: '0',
+//     state: 'registered',
+//     vendor_id: '92cc10b6ab405e30886fa5ccc322ec24'
+
     }
 };

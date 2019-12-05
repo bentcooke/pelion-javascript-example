@@ -207,14 +207,17 @@
          **/
         startNotifications(on_connect_callback, on_message_callback)
         {
+            console.log('Opening Websocket...');
             this.put('/v2/notification/websocket', null, null, function(code, content) {
                 let url = this.config.pelion_api_host + '/v2/notification/websocket-connect';
                 this.socket = new Websocket(url, {headers: this.header});
                 this.socket.onopen = function open() {
                     if (on_connect_callback)
+                        console.log('Websocket open!');
                         on_connect_callback();
                 };
                 this.socket.onclose = function close() {
+                    console.log('Websocker closed!');
                 };
                 this.socket.onmessage = function incoming(data) {
                     if (data.type === 'message') {
