@@ -1,0 +1,12 @@
+/**
+ * pelion_api_key - Generated on the portal
+ * pelion_api_host - Points to the pelion instance. Production is default
+ * pelion_filter - Filter when getting devices. Options specified in Pelion documentation
+ */
+module.exports = {
+    pelion_api_key: '<INSERT_API_KEY_HERE>',
+    pelion_api_host: 'https://api.us-east-1.mbedcloud.com',
+    pelion_filter: {
+        state: 'registered'
+    }
+};

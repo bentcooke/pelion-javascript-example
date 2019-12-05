@@ -1,0 +1,21 @@
+{
+  "name": "pelion-javascript-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "docs": "mkdir -p docs; node_modules/.bin/jsdoc -r -c jsdoc.json README.md -d docs/",
+    "markdown": "mkdir -p docs; jsdoc2md src/Pelion.js > docs/README.md"
+  },
+  "author": "Michael Ray <michael.ray@arm.com>",
+  "license": "Apache2",
+  "dependencies": {
+    "isomorphic-ws": "^4.0.1",
+    "request": "^2.88.0",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.3",
+    "jsdoc-to-markdown": "^4.0.1"
+  }
+}
